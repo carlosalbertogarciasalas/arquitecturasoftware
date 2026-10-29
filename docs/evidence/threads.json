@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29T05:43:47.885Z",
+  "scope": "ensayo local; no mide capacidad cloud",
+  "items": 2000,
+  "iterationsPerItem": 30,
+  "sequentialMs": 106.4663,
+  "parallelMs": 121.42180000000002,
+  "includesWorkerStartupAndCommunication": true,
+  "threadIds": [
+    1,
+    2
+  ],
+  "equivalent": true,
+  "network": {
+    "executed": true,
+    "url": "http://localhost:3100/api/demo/ping",
+    "elapsedMs": 76.8784,
+    "body": {
+      "service": "gmpos-clientes-demo",
+      "mode": "LOCAL_BROWSER_STORAGE",
+      "databaseConnected": false,
+      "timestamp": "2026-10-29T05:43:47.873Z"
+    }
+  }
+}

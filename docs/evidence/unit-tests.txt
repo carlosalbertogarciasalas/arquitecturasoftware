@@ -1,0 +1,128 @@
+
+> gmpos-clientes-prototipo@0.1.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: T01 registro normalizado, duplicado y persistencia al reabrir conexión
+ok 1 - T01 registro normalizado, duplicado y persistencia al reabrir conexión
+  ---
+  duration_ms: 18.2268
+  type: 'test'
+  ...
+# Subtest: T01 edición optimista no sobrescribe una versión anterior
+ok 2 - T01 edición optimista no sobrescribe una versión anterior
+  ---
+  duration_ms: 2.1569
+  type: 'test'
+  ...
+# Subtest: T02 aislamiento lógico de comprobantes y solicitudes entre perfiles
+ok 3 - T02 aislamiento lógico de comprobantes y solicitudes entre perfiles
+  ---
+  duration_ms: 3.6319
+  type: 'test'
+  ...
+# Subtest: T03 rol cliente no puede importar ni reclamar mensajes por la Fachada
+ok 4 - T03 rol cliente no puede importar ni reclamar mensajes por la Fachada
+  ---
+  duration_ms: 1.5458
+  type: 'test'
+  ...
+# Subtest: T04/T05 dos conexiones repiten el lote y solo existe un saldo 80
+ok 5 - T04/T05 dos conexiones repiten el lote y solo existe un saldo 80
+  ---
+  duration_ms: 3.1223
+  type: 'test'
+  ...
+# Subtest: T07/T14 petición idempotente permanece pendiente hasta activar consumidor
+ok 6 - T07/T14 petición idempotente permanece pendiente hasta activar consumidor
+  ---
+  duration_ms: 4.4017
+  type: 'test'
+  ...
+# Subtest: T08 abortar una transacción no conserva efectos parciales
+ok 7 - T08 abortar una transacción no conserva efectos parciales
+  ---
+  duration_ms: 1.9748
+  type: 'test'
+  ...
+# Subtest: T14 cierre del navegador conserva el mensaje sin consumir
+ok 8 - T14 cierre del navegador conserva el mensaje sin consumir
+  ---
+  duration_ms: 2.8648
+  type: 'test'
+  ...
+# Subtest: T15 consumidores concurrentes no reclaman el mismo mensaje vigente
+ok 9 - T15 consumidores concurrentes no reclaman el mismo mensaje vigente
+  ---
+  duration_ms: 3.6294
+  type: 'test'
+  ...
+# Subtest: T15 lease vencido se recupera y el token antiguo no puede finalizar
+ok 10 - T15 lease vencido se recupera y el token antiguo no puede finalizar
+  ---
+  duration_ms: 4.6428
+  type: 'test'
+  ...
+# Subtest: T15 reintentos respetan disponibilidad y tercer fallo es terminal
+ok 11 - T15 reintentos respetan disponibilidad y tercer fallo es terminal
+  ---
+  duration_ms: 3.8372
+  type: 'test'
+  ...
+# Subtest: T15 caída en tercer intento termina FALLIDO al barrer lease vencido
+ok 12 - T15 caída en tercer intento termina FALLIDO al barrer lease vencido
+  ---
+  duration_ms: 4.178
+  type: 'test'
+  ...
+# Subtest: T13 Singleton devuelve una única referencia inmutable sin datos de sesión
+ok 13 - T13 Singleton devuelve una única referencia inmutable sin datos de sesión
+  ---
+  duration_ms: 0.272
+  type: 'test'
+  ...
+# Subtest: T16 notifica una vez, cancela y un callback fallido no detiene los otros
+ok 14 - T16 notifica una vez, cancela y un callback fallido no detiene los otros
+  ---
+  duration_ms: 0.3335
+  type: 'test'
+  ...
+# Subtest: T16 descarta respuestas viejas y borra suscripciones al cambiar de sesión
+ok 15 - T16 descarta respuestas viejas y borra suscripciones al cambiar de sesión
+  ---
+  duration_ms: 0.2371
+  type: 'test'
+  ...
+# Subtest: T17 Fachada propaga fallo de persistencia, no inventa saldo cero
+ok 16 - T17 Fachada propaga fallo de persistencia, no inventa saldo cero
+  ---
+  duration_ms: 0.252
+  type: 'test'
+  ...
+# Subtest: T11 estrategias recuperan el mismo conjunto en orden sin duplicar páginas
+ok 17 - T11 estrategias recuperan el mismo conjunto en orden sin duplicar páginas
+  ---
+  duration_ms: 13.7716
+  type: 'test'
+  ...
+# Subtest: Fachada no retiene identidad entre consultas de clientes
+ok 18 - Fachada no retiene identidad entre consultas de clientes
+  ---
+  duration_ms: 4.3771
+  type: 'test'
+  ...
+# Subtest: T07 la clave generada por la UI acepta los identificadores compuestos del lote
+ok 19 - T07 la clave generada por la UI acepta los identificadores compuestos del lote
+  ---
+  duration_ms: 5.1856
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 588.4706

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-29T05:42:50.060Z",
+  "scope": "Algoritmo local en Node; excluye red, renderizado y base de datos. No es prueba de carga cloud.",
+  "rows": [
+    {
+      "run": 1,
+      "strategy": "full",
+      "items": 100,
+      "iterations": 100,
+      "pagesToReadAll": 1,
+      "p50ms": 0.002999999999985903,
+      "p95ms": 0.0069000000000016826,
+      "equivalent": true
+    },
+    {
+      "run": 1,
+      "strategy": "cursor",
+      "items": 100,
+      "iterations": 100,
+      "pagesToReadAll": 20,
+      "p50ms": 0.06569999999999254,
+      "p95ms": 0.12890000000001578,
+      "equivalent": true
+    },
+    {
+      "run": 2,
+      "strategy": "full",
+      "items": 100,
+      "iterations": 100,
+      "pagesToReadAll": 1,
+      "p50ms": 0.0023999999999944066,
+      "p95ms": 0.0030000000000143245,
+      "equivalent": true
+    },
+    {
+      "run": 2,
+      "strategy": "cursor",
+      "items": 100,
+      "iterations": 100,
+      "pagesToReadAll": 20,
+      "p50ms": 0.06520000000000437,
+      "p95ms": 0.11160000000000991,
+      "equivalent": true
+    },
+    {
+      "run": 3,
+      "strategy": "full",
+      "items": 100,
+      "iterations": 100,
+      "pagesToReadAll": 1,
+      "p50ms": 0.0024000000000228283,
+      "p95ms": 0.0027999999999792635,
+      "equivalent": true
+    },
+    {
+      "run": 3,
+      "strategy": "cursor",
+      "items": 100,
+      "iterations": 100,
+      "pagesToReadAll": 20,
+      "p50ms": 0.052300000000002456,
+      "p95ms": 0.058100000000024465,
+      "equivalent": true
+    }
+  ]
+}
